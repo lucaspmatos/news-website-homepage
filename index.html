@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta id="viewport" name="viewport" content="width=device-width, user-scalable=no">
+		<title>Portal de Notícias</title>
+		<link href="assets/css/style.css" rel="stylesheet" />
+		<script type="text/javascript" src="assets/js/script.js"></script>
+	</head>
+	<body>
+		<div class="top">
+			<div class="insidetop">
+				<div class="lefttop">
+					<ul>
+						<li>Home</li>
+						<li>Sobre Nós</li>
+						<li>Serviços</li>
+						<li>Contato</li>
+					</ul>
+				</div>
+				<div class="righttop">
+					<div class="search-container">
+					<input type="text" name="search" class="searchtop" placeholder="Procurar..." />
+					<button type="submit">🔍</button>
+					</div>
+					<a href=""><img src="assets/images/icons/youtube.png" border="0" width="25" height="25"/></a>
+					<a href=""><img src="assets/images/icons/instagram.png" border="0" width="25" height="25"/></a>
+					<a href=""><img src="assets/images/icons/twitter.png" border="0" width="25" height="25"/></a>
+					<a href=""><img src="assets/images/icons/facebook.png" border="0" width="25" height="25"/></a>
+				</div>
+			</div>
+		</div>
+		<div class="secondtop">
+			<div class="inside2top">
+				<div class="logo">
+					<img src="assets/images/logos/portal-de-noticias-dois.png" width="184" height="60"/>
+				</div>
+				<div class="banner">BANNER (650px x 80px)</div>
+			</div>
+		</div>
+		<div class="menu">
+			<div class="insidemenu">
+				<div class="menu-name" onclick="toggleMenu()">MENU</div>
+				<img src="assets/images/icons/menu-icon.png" border="0" width="20" height="20" class="mobile-menu" onclick="toggleMenu()" />
+				<ul id="menu">
+					<li>Política</li>
+					<li>Economia</li>
+					<li>Entretenimento<img src="assets/images/icons/arrow-down.png" border="0" width="8"/><div class="submenu">
+						<div class="submenu-item">Fofocas</div>
+						<div class="submenu-item">Novelas</div>
+						<div class="submenu-item">Entrevistas</div>
+						<div class="submenu-item">Celebridades</div>
+					</div>
+					</li>
+					<li>Educação</li>
+					<li>Esporte<img src="assets/images/icons/arrow-down.png" border="0" width="8"/>
+					<div class="submenu"><div class="submenu-item">Futebol</div>
+						<div class="submenu-item">Olimpíadas</div>
+						<div class="submenu-item">Copa do Mundo</div></li>
+					<li>LGBT+</li>
+					<li>Social<img src="assets/images/icons/arrow-down.png" border="0" width="8"/><div class="submenu"><div class="submenu-item">Histórias</div>
+						<div class="submenu-item">Futuro Verde</div>
+						<div class="submenu-item">Meio Ambiente</div>
+						<div class="submenu-item">Sustentabilidade</div>
+						<div class="submenu-item">Ajude um Parceiro</div></div></li>
+					<li>Opinião</li>
+				</ul>
+			</div>
+		</div>
+		<div class="urgentnews">
+			<div class="insideurgentnews">
+				<div class="urgentnewsarea">
+					<div class="urgentnewstitle">URGENTE</div>
+					<div class="urgentnewstext">Amazônia perde área verde igual a 200 mil campos de futebol em apenas dez meses</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="insidecontainer">
+				<div class="leftside">
+					<div class="slideshow" id="slideshow">
+						<div class="slidecircle">
+							<div class="circle" onclick="mudarSlide(0)"></div>
+							<div class="circle" onclick="mudarSlide(1)"></div>
+							<div class="circle" onclick="mudarSlide(2)"></div>
+							<div class="circle" onclick="mudarSlide(3)"></div>
+						</div>
+						<div class="slideshow-area">
+							<div class="slide" style="background-image:url('assets/images/slideshow-news/bitcoin.jpg')">
+								<div class="slideinfo">
+									<div class="slideinfo-title">Bitcoin atinge menor valor comercial desde 2017</div>
+									<div class="slideinfo-subtitle">Será que a criptomoeda ainda é uma boa ideia para se investir?</div>
+								</div>
+							</div>
+							<div class="slide" style="background-image:url('assets/images/slideshow-news/medicine.jpg')">
+								<div class="slideinfo">
+									<div class="slideinfo-title">Remédios para o coração ficarão mais caros a partir de setembro</div>
+									<div class="slideinfo-subtitle">Veja a lista de medicamentos que sofrerão o aumento</div>
+								</div>
+							</div>
+							<div class="slide" style="background-image:url('assets/images/slideshow-news/couple.jpg')">
+								<div class="slideinfo">
+									<div class="slideinfo-title">Como turbinar a vida amorosa em tempos modernos</div>
+									<div class="slideinfo-subtitle">Apps de relacionamento são a nova tendência para conhecer alguém</div>
+								</div>
+							</div>
+							<div class="slide" style="background-image:url('assets/images/slideshow-news/miami.jpg')">
+								<div class="slideinfo">
+									<div class="slideinfo-title">Miami não é mais a cidade queridinha dos turistas brasileiros</div>
+									<div class="slideinfo-subtitle">Lisboa disponta como novo destino dos viajantes</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="widget">
+						<div class="widgettitle">NOTÍCIAS & VARIEDADES</div>
+							<div class="newsarea1">
+								<div class="news-item bigger">
+									<div class="news-img">
+										<img src="assets/images/news/dolar-news.jpg" border="0"/>
+									</div>
+									<div class="news-title">Aumento do dólar é responsável por mais de 1,5 mil cancelamentos de viagens por mês no Brasil</div>
+									<div class="news-info">Há 5 minutos • Economia em Foco • 115 comentários</div>
+								</div>
+							</div>
+							<div class="newsarea2">
+								<div class="news-item">
+									<div class="news-img">
+										<img src="assets/images/news/travel-news.jpg" border="0" width="80" height="80"/>
+									</div>
+									<div class="news-title">Confira 5 lugares que você precisa visitar nas férias do fim de ano</div>
+									<div class="news-info">Há 10 minutos • Guia de Turismo</div>
+								</div>
+								<div class="news-item">
+									<div class="news-img">
+										<img src="assets/images/news/body-painting-news.jpg" border="0" width="80" height="80"/>
+									</div>
+									<div class="news-title">Por que a pintura corporal pode ser uma ótima forma de relaxamento</div>
+									<div class="news-info">Há 1 hora • Veia Cultural</div>
+								</div>
+								<div class="news-item">
+									<div class="news-img">
+										<img src="assets/images/news/gender-news.jpg" border="0" width="80" height="80"/>
+									</div>
+									<div class="news-title">Orientação sexual ou identidade de gênero? Descubra a diferença!</div>
+									<div class="news-info">Há 2 horas • Central da Diversidade</div>
+								</div>
+								<div class="news-item">
+									<div class="news-img">
+										<img src="assets/images/news/burger-news.jpg" border="0" width="80" height="80"/>
+									</div>
+									<div class="news-title">Experimentamos o famoso hambúrguer de Chicago: é de lamber os dedos</div>
+									<div class="news-info">Há 5 horas • Além do Gourmet</div>
+								</div>
+							</div>
+							<div style="clear:both"></div>
+					</div>
+					<div class="widget">
+						<div class="widgettitle">ENTRETENIMENTO</div>
+							<div class="newsarea1">
+								<div class="news-item bigger">
+									<div class="news-img">
+										<img src="assets/images/entertainment/avengers-endgame.jpg" border="0"/>
+									</div>
+									<div class="news-title">Saiba como Vingadores: Ultimato se tornou o filme com a maior bilheteria de todos os tempos</div>
+									<div class="news-info">Há 25 minutos • Cantinho do Cinema • 52 comentários</div>
+								</div>
+							</div>
+							<div class="newsarea2">
+								<div class="news-item">
+									<div class="news-img">
+										<img src="assets/images/entertainment/brad-pitt.jpg" border="0" width="80" height="80"/>
+									</div>
+									<div class="news-title">Famosa estátua de cera de Brad Pitt vem ao Brasil pela primeira vez</div>
+									<div class="news-info">Há 50 minutos • Celebridades</div>
+								</div>
+								<div class="news-item">
+									<div class="news-img">
+										<img src="assets/images/entertainment/blueberry.jpg" border="0" width="80" height="80"/>
+									</div>
+									<div class="news-title">Por que a dieta 'blueberry' das famosas pode não ser tão boa assim</div>
+									<div class="news-info">Há 3 horas • Saúde na Telinha</div>
+								</div>
+								<div class="news-item">
+									<div class="news-img">
+										<img src="assets/images/entertainment/funko-jon-snow.jpg" border="0" width="80" height="80"/>
+									</div>
+									<div class="news-title">Os funkos de Game of Thrones são a coisa mais fofa da internet; veja fotos</div>
+									<div class="news-info">Há 6 horas • Papo de Seriador</div>
+								</div>
+								<div class="news-item">
+									<div class="news-img">
+										<img src="assets/images/entertainment/terror-books.jpg" border="0" width="80" height="80"/>
+									</div>
+									<div class="news-title">Estes dez livros de terror moderno farão você dormir arrepiado e com calafrios</div>
+									<div class="news-info">Há 9 horas • Cantinho da Leitura</div>
+								</div>
+							</div>
+							<div style="clear:both"></div>
+					</div>
+				</div>
+				<div class="rightside">
+					<div class="widget">
+						<div class="widgettitle">FRASE DO DIA</div>
+						<div class="widgetcontent">
+							"Quem estuda e não pratica o que aprendeu é como o homem que lavra e não semeia." (Provérbio Árabe)
+						</div>
+					</div>
+					<div class="widget">
+						<div class="widgettitle">MAIS ACESSADAS</div>
+						<div class="widgetcontent">
+							<div class="acessadas-item">Por que o PIB brasileiro pode cair em até 3,5% nos próximos cinco anos
+							</div>
+							<div class="acessadas-item">Estados Unidos e Rússia vivem clima de tensão desde última reunião da ONU
+							</div>
+							<div class="acessadas-item">Qual celebridade internacional ou brasileira seria o amor da sua vida? Faça o teste!
+							</div>
+							<div class="acessadas-item">E lá se vão oito anos desde que Caetano Veloso estacionou o carro no Leblon
+							</div>
+							<div class="acessadas-item-last">10 motivos que fazem de Rihanna a maior 'girl power' do atual cenário da música pop
+							</div>
+					    </div>
+					</div>
+					<div class="widget">
+						<div class="widgettitle">PUBLICIDADE</div>
+						<div class="widgetpepsi">
+							<a href="http://www.pepsi.com.br"><img src="assets/images/logos/pepsi.png" border="" width="275" class="pepsi"/></a>
+					    </div>
+					</div>
+					<div class="widget">
+						<div class="widgettitle">ENCONTRE-NOS NO FACEBOOK</div>
+						<div class="widgetfacebook">
+							<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=273&height=449&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="273" height="449" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+						</div>
+					</div>
+			</div>
+		</div>
+		<div class="footer">
+		© Portal de Notícias 2019. Todos os direitos reservados.
+		</div>
+	</body>
+</html>
